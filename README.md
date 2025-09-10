@@ -32,46 +32,51 @@ An AI-powered system that analyzes Rotten Tomatoes audience reviews to filter ou
    pip install -r requirements.txt
 
 3. **Set up environment variables**:
-   Create a .env file
-
-4. **Add your DeepSeek API key**:
+   - Create a .env file
+   - Add your DeepSeek API key:
+   ```text
    DEEPSEEK_API_KEY=your_api_key_here
 
-5. **Download ChromeDriver**:
-   Ensure ChromeDriver is in your path or project directory
-   Download from: https://chromedriver.chromedriver.org/
+4. **Download ChromeDriver**:
+   - Ensure ChromeDriver is in your path or project directory
+   - Download from: https://chromedriver.chromedriver.org/
 
 ## Usage
 
 Run the main script:
+```bash
 python newscrape.py
+```
 
 The program will:
-Prompt you for a movie title
-Scrape reviews from Rotten Tomatoes
-Analyze them using AI
-Display comparative results showing:
-  -Original Rotten Tomatoes score
-  -Sanitized AI-weighted score
-  -Quality distribution of reviews
-  -Detection of potential review bombing
+- Prompt you for a movie title
+- Scrape reviews from Rotten Tomatoes
+- Analyze them using AI
+- Display comparative results showing:
+  - Original Rotten Tomatoes score
+  - Sanitized AI-weighted score
+  - Quality distribution of reviews
+  - Detection of potential review bombing
 
 ## Project Structure
+```text
 ProjectH/
 ├── newscrape.py          # Main application script
 ├── .gitignore           # Git ignore rules
 ├── README.md            # This file
 ├── requirements.txt     # Python dependencies
 └── final.db            # SQLite database (created automatically)
+```
 
 ## Technical Details
-Web Scraping: Selenium WebDriver with Chrome
-AI Integration: DeepSeek Chat API for review analysis
-Database: SQLite with proper schema design
-Concurrency: ThreadPoolExecutor for parallel processing
-Data Validation: MD5 hashing for review deduplication
+- **Web Scraping**: Selenium WebDriver with Chrome
+- **AI Integration**: DeepSeek Chat API for review analysis
+- **Database**: SQLite with proper schema design
+- **Concurrency**: ThreadPoolExecutor for parallel processing
+- **Data Validation**: MD5 hashing for review deduplication
 
 ## Example Output
+```text
 === AI ANALYSIS RESULTS for 'barbie' ===
 Total Reviews Analyzed: 300
 Official RT Audience Score: 51.3%
@@ -101,25 +106,26 @@ The sanitized score is 16.1% HIGHER than the official score, suggesting review b
 
 Overall review quality: 49.4%
 → Mostly brief, emotional, or low-effort reviews
+```
 
 ## Use Cases
-Film Studios: Get accurate audience sentiment beyond review bombing
-Critics: Understand genuine audience reception vs. coordinated campaigns
-Researchers: Analyze review quality patterns and audience behavior
-Movie Fans: See what actual viewers think without spam interference
+- **Film Studios**: Get accurate audience sentiment beyond review bombing
+- **Critics**: Understand genuine audience reception vs. coordinated campaigns
+- **Researchers**: Analyze review quality patterns and audience behavior
+- **Movie Fans**: See what actual viewers think without spam interference
 
 ## Limitations
-Requires Rotten Tomatoes page structure to remain consistent
-Dependent on DeepSeek API availability and pricing
-ChromeDriver requires a compatible Chrome version
-Processing time increases with the number of reviews
+- Requires Rotten Tomatoes page structure to remain consistent
+- Dependent on DeepSeek API availability and pricing
+- ChromeDriver requires a compatible Chrome version
+- Processing time increases with the number of reviews
 
 ## Future Enhancements
-Web interface with Flask/Django
-Historical trend analysis
-Comparative analysis across multiple platforms
-Sentiment analysis beyond binary authentic/inauthentic
-Export functionality for data analysis
+- Web interface with Flask/Django
+- Historical trend analysis
+- Comparative analysis across multiple platforms
+- Sentiment analysis beyond binary authentic/inauthentic
+- Export functionality for data analysis
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -130,5 +136,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## Contact
 Hibah Sohail Siddiqui - GitHub
 
-**Note: This project is for educational and research purposes. Please respect Rotten Tomatoes' terms of service and use responsibly.**
+
+Note: This project is for educational and research purposes. Please respect Rotten Tomatoes' Terms of Service and use the site responsibly.**
 
