@@ -27,25 +27,22 @@ An AI-powered system that analyzes Rotten Tomatoes audience reviews to filter ou
    git clone https://github.com/Hibah155/ProjectH.git
    cd ProjectH
 
-**Installation**
-Clone the repository:
-git clone https://github.com/Hibah155/ProjectH.git
-cd ProjectH
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
 
-Install dependencies:
-pip install -r requirements.txt
+3. **Set up environment variables**:
+   Create a .env file
 
-Set up environment variables:
-Create a .env file
+4. **Add your DeepSeek API key**:
+   DEEPSEEK_API_KEY=your_api_key_here
 
-Add your DeepSeek API key:
-DEEPSEEK_API_KEY=your_api_key_here
+5. **Download ChromeDriver**:
+   Ensure ChromeDriver is in your path or project directory
+   Download from: https://chromedriver.chromedriver.org/
 
-Download ChromeDriver:
-Ensure ChromeDriver is in your path or project directory
-Download from: https://chromedriver.chromedriver.org/
+## Usage
 
-**Usage**
 Run the main script:
 python newscrape.py
 
@@ -59,7 +56,7 @@ Display comparative results showing:
   -Quality distribution of reviews
   -Detection of potential review bombing
 
-**Project Structure**
+## Project Structure
 ProjectH/
 ├── newscrape.py          # Main application script
 ├── .gitignore           # Git ignore rules
@@ -67,14 +64,14 @@ ProjectH/
 ├── requirements.txt     # Python dependencies
 └── final.db            # SQLite database (created automatically)
 
-**Technical Details**
+## Technical Details
 Web Scraping: Selenium WebDriver with Chrome
 AI Integration: DeepSeek Chat API for review analysis
 Database: SQLite with proper schema design
 Concurrency: ThreadPoolExecutor for parallel processing
 Data Validation: MD5 hashing for review deduplication
 
-**Example Output**
+## Example Output
 === AI ANALYSIS RESULTS for 'barbie' ===
 Total Reviews Analyzed: 300
 Official RT Audience Score: 51.3%
@@ -105,32 +102,32 @@ The sanitized score is 16.1% HIGHER than the official score, suggesting review b
 Overall review quality: 49.4%
 → Mostly brief, emotional, or low-effort reviews
 
-**Use Cases**
+## Use Cases
 Film Studios: Get accurate audience sentiment beyond review bombing
 Critics: Understand genuine audience reception vs. coordinated campaigns
 Researchers: Analyze review quality patterns and audience behavior
 Movie Fans: See what actual viewers think without spam interference
 
-**Limitations**
+## Limitations
 Requires Rotten Tomatoes page structure to remain consistent
 Dependent on DeepSeek API availability and pricing
 ChromeDriver requires a compatible Chrome version
 Processing time increases with the number of reviews
 
-**Future Enhancements**
+## Future Enhancements
 Web interface with Flask/Django
 Historical trend analysis
 Comparative analysis across multiple platforms
 Sentiment analysis beyond binary authentic/inauthentic
 Export functionality for data analysis
 
-**License**
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Contributing**
+## Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-**Contact**
+## Contact
 Hibah Sohail Siddiqui - GitHub
 
 **Note: This project is for educational and research purposes. Please respect Rotten Tomatoes' terms of service and use responsibly.**
