@@ -26,16 +26,19 @@ An AI-powered system that analyzes Rotten Tomatoes audience reviews to filter ou
    ```bash
    git clone https://github.com/Hibah155/ProjectH.git
    cd ProjectH
+   ```
 
 2. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
+   ```
 
 3. **Set up environment variables**:
    - Create a .env file
    - Add your DeepSeek API key:
    ```text
    DEEPSEEK_API_KEY=your_api_key_here
+   ```
 
 4. **Download ChromeDriver**:
    - Ensure ChromeDriver is in your path or project directory
@@ -134,8 +137,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
 ## Contact
-Hibah Sohail Siddiqui - GitHub
+Hibah Sohail Siddiqui - [GitHub](https://github.com/Hibah155)
 
+---
 
-Note: This project is for educational and research purposes. Please respect Rotten Tomatoes' Terms of Service and use the site responsibly.**
+**Note**: This project is for educational and research purposes. Please respect Rotten Tomatoes' Terms of Service and use the site responsibly.
 
