@@ -1,21 +1,31 @@
-Rotten Tomatoes Review Sanitizer
+# Rotten Tomatoes Review Sanitizer
+
 An AI-powered system that analyzes Rotten Tomatoes audience reviews to filter out review bombing, spam, and low-quality content, creating a more accurate "sanitized" score.
 
-**Features**
-Web Scraping: Automatically collects user reviews from Rotten Tomatoes
-AI Analysis: Uses DeepSeek AI to evaluate review quality and authenticity
-Quality Scoring: Rates reviews from 0.1 (low effort) to 1.0 (high quality)
-Review Bombing Detection: Identifies and filters out spam/troll content
-Smart Aggregation: Creates weighted scores based on review quality
-Database Storage: SQLite database with deduplication and efficient storage
-Parallel Processing: Multi-threaded analysis for faster processing
+## Features
 
-**How It Works**
-Data Acquisition: Scrapes reviews from Rotten Tomatoes using Selenium
-Data Storage: Stores reviews in SQLite with metadata and deduplication
-AI Analysis: Uses DeepSeek API to judge review quality and authenticity
-Score Calculation: Creates weighted average scores based on AI assessment
-Results Presentation: Compares original vs. sanitized scores with detailed analytics
+- **Web Scraping**: Automatically collects user reviews from Rotten Tomatoes
+- **AI Analysis**: Uses DeepSeek AI to evaluate review quality and authenticity
+- **Quality Scoring**: Rates reviews from 0.1 (low effort) to 1.0 (high quality)
+- **Review Bombing Detection**: Identifies and filters out spam/troll content
+- **Smart Aggregation**: Creates weighted scores based on review quality
+- **Database Storage**: SQLite database with deduplication and efficient storage
+- **Parallel Processing**: Multi-threaded analysis for faster processing
+
+## How It Works
+
+1. **Data Acquisition**: Scrapes reviews from Rotten Tomatoes using Selenium
+2. **Data Storage**: Stores reviews in SQLite with metadata and deduplication
+3. **AI Analysis**: Uses DeepSeek API to judge review quality and authenticity
+4. **Score Calculation**: Creates weighted average scores based on AI assessment
+5. **Results Presentation**: Compares original vs. sanitized scores with detailed analytics
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Hibah155/ProjectH.git
+   cd ProjectH
 
 **Installation**
 Clone the repository:
