@@ -48,7 +48,7 @@ An AI-powered system that analyzes Rotten Tomatoes audience reviews to filter ou
 
 Run the main script:
 ```bash
-python newscrape.py
+python rt_review_sanitizer.py
 ```
 
 The program will:
@@ -64,11 +64,11 @@ The program will:
 ## Project Structure
 ```text
 ProjectH/
-├── newscrape.py          # Main application script
-├── .gitignore           # Git ignore rules
-├── README.md            # This file
-├── requirements.txt     # Python dependencies
-└── final.db            # SQLite database (created automatically)
+├── rt_review_sanitizer.py    # Main application script
+├── .gitignore                # Git ignore rules
+├── README.md                 # This file
+├── requirements.txt          # Python dependencies
+└── final.db                  # SQLite database (created automatically)
 ```
 
 ## Technical Details
