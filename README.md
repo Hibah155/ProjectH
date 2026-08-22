@@ -24,8 +24,8 @@ An AI-powered system that analyzes Rotten Tomatoes audience reviews to filter ou
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Hibah155/ProjectH.git
-   cd ProjectH
+   git clone https://github.com/Hibah155/ProjectRT.git
+   cd ProjectRT
    ```
 
 2. **Install dependencies**:
@@ -63,7 +63,7 @@ The program will:
 
 ## Project Structure
 ```text
-ProjectH/
+ProjectRT/
 ├── rt_review_sanitizer.py    # Main application script
 ├── .gitignore                # Git ignore rules
 ├── README.md                 # This file
